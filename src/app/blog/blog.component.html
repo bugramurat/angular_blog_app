@@ -1,0 +1,32 @@
+<app-header></app-header>
+
+<!-- Blog Start -->
+<div class="blog_main">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 class="blog_text">Our Blog</h1>
+      </div>
+    </div>
+
+    <div class="blog_section_2">
+      <div class="row">
+        @for (post of data; track post.id) {
+        <div class="col-sm-4">
+          <div class="section_1">
+            <div>
+              <img src="assets/images/code.jpg" style="max-width: 100%" />
+            </div>
+            <button type="button" class="date-bt">{{ post.date }}</button>
+            <p>{{ post.desc }}</p>
+          </div>
+        </div>
+        }
+      </div>
+    </div>
+
+    <!--blog end -->
+
+    <app-footer></app-footer>
+  </div>
+</div>
