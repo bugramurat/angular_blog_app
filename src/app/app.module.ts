@@ -4,8 +4,6 @@ import {
   provideClientHydration,
 } from '@angular/platform-browser';
 
-import AlertModule from 'ngx-bootstrap';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
